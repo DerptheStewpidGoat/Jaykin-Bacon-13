@@ -352,8 +352,8 @@
 	icon_state = "alc[magazine ? "-[Ceiling(get_ammo(0)/9)*8]" : ""][chambered ? "" : "-e"]"
 	return
 
-/obj/item/weapon/gun/projectile/automatic/aks74
-	name = "AKS-740U"
+/obj/item/weapon/gun/projectile/automatic/ak74u
+	name = "AK-740U"
 	desc = "An earlier model of the AK platform, this fires a lower caliber cartridge and is a lighter weight than its AK-922 counterpart. Remains quite deadly regardless and functions similarly."
 	icon_state = "aks74"
 	item_state = "ak922"
@@ -368,7 +368,7 @@
 	mag_unload_sound = 'sound/effects/wep_magazines/ak922_unload.ogg'
 	chamber_sound = 'sound/effects/wep_magazines/ak922_chamber.ogg'
 
-/obj/item/weapon/gun/projectile/automatic/aks74/update_icon()
+/obj/item/weapon/gun/projectile/automatic/ak74u/update_icon()
 	..()
 	icon_state = "[initial(icon_state)][magazine ? "" : "-e"]"
 
